@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Dungeon manager form</h1>
+    <p id="description">Form for the improvement of Dungeon Manager services.</p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name" id="name-label">Name: </label>
+        <input 
+          id="name" 
+          type="text" 
+          name="name" 
+          placeholder="Preludio Seu Ailton"
+          minlength="2"
+          maxlength="64" 
+          required />
+
+        <br />
+
+        <label for="email" id="email-label">Email:</label>
+        <input 
+          id="email" 
+          type="email"
+          name="email"
+          placeholder="exemple@email.com"
+          minlength="4"
+          maxlength="64"
+          required />
+
+        <br />
+
+        <label for="number" id="number-label">Age:</label>
+        <input 
+          id="number" 
+          type="number"
+          name="age"
+          placeholder="Age"
+          min="3"
+          max="100" />
+
+        <br />
+
+        <label for="race" id="race-label">Race: </label>
+        <select id="race" name="race">
+          <option selected disabled>Select your race</option>
+          <option value="human">Human</option>
+          <option value="elve">Elve</option>
+          <option value="dwarve">Dwarve</option>
+          <option value="orc">Orc</option>
+          <option value="goblin">Goblin</option>
+          <option value="troll">Troll</option>
+          <option value="fairie">Fairie</option>
+          <option value="dragon">Dragon</option>
+          <option value="mermaid">Mermaid</option>
+          <option value="giant">Giant</option>
+          <option value="centaur">Centaur</option>
+          <option value="gnome">Gnome</option>
+          <option value="vampire">Vampire</option>
+          <option value="werewolve">Werewolve</option>
+          <option value="zombie">Zombie</option>
+          <option value="siren">Siren</option>
+          <option value="wraith">Wraith</option>
+          <option value="ghoul">Ghoul</option>
+          <option value="liche">Liche</option>
+          <option value="nymph">Nymph</option>
+          <option value="sprite">Sprite</option>
+          <option value="prefer-not-to-say">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+
+        <p>
+          Which option best describes your current role?
+        </p>
+        <select id="dropdown" name="dropdown" >
+          <option selected disabled>Select the current hole</option>
+          <option value="arcane-archer">Arcane Archer</option>
+          <option value="battle-master">Battle Master</option>
+          <option value="champion">Champion</option>
+          <option value="knight">Knight</option>
+          <option value="samurai">Samurai</option>
+          <option value="assassin">Assassin</option>
+          <option value="inquisitive">Inquisitive</option>
+          <option value="scout">Scout</option>
+          <option value="swashbuckler">Swashbuckler</option>
+          <option value="beast-master">Beast Master</option>
+          <option value="hunter">Hunter</option>
+          <option value="berserker">Berserker</option>
+          <option value="priest">Priest</option>
+          <option value="shadow-priest">Shadow Priest</option>
+          <option value="elemental-mage">Elemental Mage</option>
+          <option value="arcane-mage">Acane Mage</option>
+          <option value="prefer-not-to-say">Prefer not to say</option>
+          <option value="other">Other</option>
+        </select>
+      </fieldset>
+
+      <br />
+
+      <fieldset>
+        <legend>Ratings</legend>
+
+        <p>Recommend our services?</p>
+
+        <input 
+          type="radio" 
+          name="rating" 
+          id="yes"
+          value="yes" 
+          checked>
+        <label for="yes">Yes</label>
+
+        <input 
+          type="radio" 
+          name="rating" 
+          id="no"
+          value="no">
+        <label for="no">No</label>
+
+        <input 
+          type="radio" 
+          name="rating" 
+          id="maybe"
+          value="maybe">
+        <label for="maybe">Maybe</label>
+
+        <p>What would you like to see improved?</p>
+
+        <input 
+          type="checkbox" 
+          id="dungeon" 
+          name="choice" 
+          value="dungeon">
+        <label for="dungeon" id="dungeon-label">More Dungeons</label>
+
+        <input 
+          type="checkbox" 
+          id="raid" 
+          name="raid" 
+          value="raid">
+        <label for="raid" id="raid-label">More Raids</label>
+
+        <input 
+          type="checkbox" 
+          id="loot" 
+          name="loot" 
+          value="loot">
+        <label for="loot" id="loot-label">Better loots</label>
+
+        <input 
+          type="checkbox" 
+          id="team" 
+          name="team" 
+          value="team">
+        <label for="team" id="team-label">Better teams</label>
+
+        <input 
+          type="checkbox" 
+          id="nothing" 
+          name="nothing" 
+          value="nothing"
+          checked>
+        <label for="nothing" id="nothing-label">Nothing, this is the best Dungeon manager I've ever seen.</label>
+      </fieldset>
+
+      <p><label for="comments" id="comments-label">Other Comments?<label></p>
+      <textarea 
+        cols="30"
+        rows="10"
+        name="comments"
+        id="comments"
+        placeholder="Nothing, this is the best Dungeon manager I've ever seen."></textarea>
+
+      <br />
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
